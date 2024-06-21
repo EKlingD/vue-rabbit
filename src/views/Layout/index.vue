@@ -7,15 +7,17 @@ import LayoutFixed from "@/views/Layout/componenents/LayoutFixed.vue";
 //触发获取导航列表的action
 import { useCategoryStore } from "@/stores/category";
 import { onMounted } from "vue";
-const CategoryStore = useCategoryStore()
+const CategoryStore = useCategoryStore();
 
-onMounted(() => CategoryStore.getCategory())
+onMounted(() => CategoryStore.getCategory());
 </script>
 
 <template>
   <LayoutNav />
   <LayoutFixed />
   <LayoutHeader />
+  <!-- 添加key 破坏复用机制 强制销毁重建 -->
+  <!-- <RouterView :key="$route.fullPath" /> -->
   <RouterView />
   <LayoutFooter />
 </template>
