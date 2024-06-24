@@ -1,6 +1,6 @@
 # vue-rabbit
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue3全家桶：create-vue、Pinia、ElementPlus、Vue3+Setup、Vue-Router、VueUse
 
 ## Recommended IDE Setup
 
