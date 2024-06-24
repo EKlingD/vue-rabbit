@@ -1,4 +1,5 @@
 <script setup>
+
 import DetailHot from "./components/DetailHot.vue";
 import { getDetail } from "@/apis/detail";
 import { onMounted, ref } from "vue";
