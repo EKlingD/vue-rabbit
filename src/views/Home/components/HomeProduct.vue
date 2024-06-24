@@ -68,9 +68,18 @@ onMounted(() => getGoods());
       position: relative;
 
       img {
+        display: block;
+        background-color: #fff;
         width: 100%;
         height: 100%;
+        object-fit: contain;
+        transition: transform 1s ease, opacity 1s ease; /* 添加过渡效果 */
       }
+
+      img:hover {
+        transform: scale(0.97); /* 缩放到97% */
+        opacity: 0.8; /* 降低透明度 */
+}
 
       .label {
         width: 188px;
@@ -86,16 +95,20 @@ onMounted(() => getGoods());
         transform: translate3d(0, -50%, 0);
 
         span {
+          height: 40px;
+          font-size: 12px;
           text-align: center;
 
           &:first-child {
             width: 76px;
             background: rgba(0, 0, 0, 0.9);
+            line-height: 40px;
           }
 
           &:last-child {
             flex: 1;
             background: rgba(0, 0, 0, 0.7);
+            line-height: 40px;
           }
         }
       }
