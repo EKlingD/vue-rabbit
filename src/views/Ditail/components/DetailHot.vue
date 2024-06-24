@@ -1,5 +1,6 @@
 <script setup>
 //以24小时热榜获取数据渲染模板
+
 import { getHotGoodsAPI } from "@/apis/detail";
 import { onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
