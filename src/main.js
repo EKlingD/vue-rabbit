@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-
+import piniaPluginPersistedState from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
@@ -17,7 +17,10 @@ import { componentPlugin } from './components'
 
 const app = createApp(App)
 
-app.use(createPinia())
+const pinia = createPinia()
+app.use(pinia)
+//注册持久化插件
+pinia.use(piniaPluginPersistedState)
 app.use(router)
 app.use(lazyPlugin)
 app.use(componentPlugin)
