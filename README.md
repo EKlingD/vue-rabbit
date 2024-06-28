@@ -4,6 +4,10 @@
 ## 技术栈
 
 Vue3全家桶：create-vue、Pinia、ElementPlus、Vue3+Setup、Vue-Router、VueUse
+
+## 项目截图
+
+
 ## 项目亮点
 
 <ul>
