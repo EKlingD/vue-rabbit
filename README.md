@@ -1,14 +1,9 @@
 # vue-rabbit
 
+小兔鲜儿电商项目（vue3全家桶）
+## 技术栈
+
 Vue3全家桶：create-vue、Pinia、ElementPlus、Vue3+Setup、Vue-Router、VueUse
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
